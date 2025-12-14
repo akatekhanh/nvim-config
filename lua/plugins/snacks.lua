@@ -1,5 +1,9 @@
 return {
   "folke/snacks.nvim",
+  keys = {
+    -- Snacks terminal on <C-/> (triggered by Cmd+j via WezTerm)
+    { "<C-/>", function() require("snacks").terminal() end, desc = "Toggle Snacks Terminal", mode = { "n", "t" } },
+  },
   opts = {
     terminal = {
       win = {
