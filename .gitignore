@@ -6,3 +6,8 @@ debug
 foo.*
 *.log
 data
+
+# Claude Code / Swarm artifacts
+.claude/
+.claude-flow/
+.swarm/
