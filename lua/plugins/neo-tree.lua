@@ -29,9 +29,12 @@ return {
           ".prettierrc.json",
         },
         never_show = { ".git" },
-        window = {
-          width = 20,
-        },
+      },
+      -- `window` phải ở cấp `filesystem`, KHÔNG nằm trong `filtered_items`
+      -- (filtered_items chỉ nhận visible/hide_*/never_show), nên trước đây dòng này
+      -- bị bỏ qua hoàn toàn và sidebar vẫn rộng mặc định 40 cột.
+      window = {
+        width = 30,
       },
     },
   },
